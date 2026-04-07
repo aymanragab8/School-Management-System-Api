@@ -7,7 +7,8 @@ using SchoolProject.Application.Interfaces;
 namespace SchoolProject.Application.Features.Auth.Commands.Handlers
 {
     public class AuthCommandHandler : ResponseHandler,
-        IRequestHandler<RegisterCommand, Response<RegisterResponse>>,
+        IRequestHandler<RegisterStudentCommand, Response<RegisterResponse>>,
+        IRequestHandler<RegisterTeacherCommand, Response<RegisterResponse>>,
         IRequestHandler<LoginCommand, Response<AuthResponse>>,
         IRequestHandler<RefreshTokenCommand, Response<AuthResponse>>
     {
@@ -18,9 +19,13 @@ namespace SchoolProject.Application.Features.Auth.Commands.Handlers
             _authService = authService;
         }
 
-        public async Task<Response<RegisterResponse>> Handle(RegisterCommand request, CancellationToken cancellationToken)
+        public async Task<Response<RegisterResponse>> Handle(RegisterStudentCommand request, CancellationToken cancellationToken)
         {
-            return await _authService.RegisterAsync(request);
+            return await _authService.RegisterStudentAsync(request);
+        }
+        public async Task<Response<RegisterResponse>> Handle(RegisterTeacherCommand request, CancellationToken cancellationToken)
+        {
+            return await _authService.RegisterTeacherAsync(request);
         }
 
         public async Task<Response<AuthResponse>> Handle(LoginCommand request, CancellationToken cancellationToken)

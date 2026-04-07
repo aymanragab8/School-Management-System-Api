@@ -3,9 +3,9 @@ using SchoolProject.Application.Features.Auth.Commands.Models;
 
 namespace SchoolProject.Application.Features.Auth.Commands.Validators
 {
-    public class RegisterValidator : AbstractValidator<RegisterCommand>
+    public class RegisterStudentValidator : AbstractValidator<RegisterStudentCommand>
     {
-        public RegisterValidator()
+        public RegisterStudentValidator()
         {
             RuleFor(x => x.Email)
                 .NotEmpty().WithMessage("Email is required")

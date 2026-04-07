@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SchoolProject.Api.Base;
 using SchoolProject.Application.Features.Auth.Commands.Models;
@@ -16,8 +17,16 @@ namespace SchoolProject.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost(Router.Auth.Register)]
-        public async Task<IActionResult> Register([FromBody] RegisterCommand command)
+        [HttpPost(Router.Auth.StudentRegister)]
+
+        public async Task<IActionResult> StudentRegister([FromBody] RegisterStudentCommand command)
+        {
+            var result = await _mediator.Send(command);
+            return NewResult(result);
+        }
+        [HttpPost(Router.Auth.TeacherRegister)]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> TeacherRegister([FromBody] RegisterTeacherCommand command)
         {
             var result = await _mediator.Send(command);
             return NewResult(result);
