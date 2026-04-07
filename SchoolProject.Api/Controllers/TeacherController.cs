@@ -42,13 +42,7 @@ namespace SchoolProject.Api.Controllers
             var teacher = await _mediator.Send(query);
             return NewResult(teacher);
         }
-        [HttpPost(Router.Teacher.Create)]
-        [Authorize(Roles = "Admin,Teacher")]
-        public async Task<IActionResult> CreateNewTeacher(AddTeacherCommand teacher)
-        {
-            var result = await _mediator.Send(teacher);
-            return NewResult(result);
-        }
+
         [HttpPut(Router.Teacher.Update)]
         [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> UpdateTeacherData([FromRoute] int teacherId, [FromBody] UpdateTeacherCommand command)

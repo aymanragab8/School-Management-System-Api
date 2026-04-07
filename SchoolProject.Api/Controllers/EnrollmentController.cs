@@ -34,7 +34,7 @@ namespace SchoolProject.Api.Controllers
         }
         [HttpGet(Router.Enrollment.GetAllByCourse)]
         [Authorize(Roles = "Admin,Teacher")]
-        public async Task<IActionResult> GetAllEnrollmentsByCourse([FromQuery] int courseId, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
+        public async Task<IActionResult> GetAllEnrollmentsByCourse([FromRoute] int courseId, [FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
             var query = new GetEnrollmentsByCourseIdQuery(courseId, pageNumber, pageSize)
             {

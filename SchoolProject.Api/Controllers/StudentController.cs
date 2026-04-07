@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace SchoolProject.Api.Controllers
 {
-    [Authorize]
+
     [ApiController]
     public class StudentController : AppControllerBase
     {
@@ -20,7 +20,6 @@ namespace SchoolProject.Api.Controllers
             _mediator = mediator;
         }
         [HttpGet(Router.Student.GetAll)]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllStudents([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 10)
         {
             var students = await _mediator.Send(new GetStudentListQuery(pageNumber, pageSize));
@@ -45,14 +44,7 @@ namespace SchoolProject.Api.Controllers
             var student = await _mediator.Send(query);
             return NewResult(student);
         }
-        [HttpPost(Router.Student.Create)]
-        [Authorize(Roles = "Admin")]
 
-        public async Task<IActionResult> CreateNewStudent(AddStudentCommand student)
-        {
-            var result = await _mediator.Send(student);
-            return NewResult(result);
-        }
         [HttpPut(Router.Student.Update)]
         [Authorize(Roles = "Admin,Student")]
         public async Task<IActionResult> UpdateStudentData([FromRoute] int studentId, [FromBody] UpdateStudentCommand command)

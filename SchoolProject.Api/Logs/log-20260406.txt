@@ -1,0 +1,724 @@
+2026-04-06 09:52:57.006 +02:00 [INF] Executed DbCommand (88ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:52:57.114 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:52:57.117 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:52:57.227 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 09:52:57.510 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 09:52:57.510 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 09:52:57.564 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 09:52:57.565 +02:00 [INF] Hosting environment: Development
+2026-04-06 09:52:57.565 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 09:52:57.838 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 09:52:57.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 156.322ms
+2026-04-06 09:52:58.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 09:52:58.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 09:52:58.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 09:52:58.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 09:52:58.032 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 09:52:58.037 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 09:52:58.062 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 09:52:58.073 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 37.6958ms
+2026-04-06 09:52:58.079 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 47.1365ms
+2026-04-06 09:52:58.079 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 46.9762ms
+2026-04-06 09:52:58.079 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 47.1366ms
+2026-04-06 09:52:58.086 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 54.4998ms
+2026-04-06 09:52:58.087 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 55.1003ms
+2026-04-06 09:52:58.113 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.0085ms
+2026-04-06 09:52:58.173 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 09:52:58.188 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.5735ms
+2026-04-06 09:54:00.962 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7154/Api/Auth/StudentRegister - application/json 279
+2026-04-06 09:54:01.956 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.AuthController.StudentRegister (SchoolProject.Api)'
+2026-04-06 09:54:01.979 +02:00 [INF] Route matched with {action = "StudentRegister", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] StudentRegister(SchoolProject.Application.Features.Auth.Commands.Models.RegisterStudentCommand) on controller SchoolProject.Api.Controllers.AuthController (SchoolProject.Api).
+2026-04-06 09:54:01.991 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 09:54:02.055 +02:00 [INF] Register attempt for Admin4@gmail.com
+2026-04-06 09:54:02.117 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-04-06 09:54:02.193 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-04-06 09:54:02.315 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-04-06 09:54:02.334 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-04-06 09:54:02.370 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @p AND [a].[RoleId] = @p1
+2026-04-06 09:54:02.375 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-04-06 09:54:02.386 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-04-06 09:54:02.425 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+2026-04-06 09:54:02.438 +02:00 [INF] Register successful for Admin4@gmail.com - StudentId created
+2026-04-06 09:54:02.446 +02:00 [INF] Executing CreatedResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Auth.Responses.RegisterResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 09:54:02.461 +02:00 [INF] Executed action SchoolProject.Api.Controllers.AuthController.StudentRegister (SchoolProject.Api) in 477.6554ms
+2026-04-06 09:54:02.463 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.AuthController.StudentRegister (SchoolProject.Api)'
+2026-04-06 09:54:02.467 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7154/Api/Auth/StudentRegister - 201 null application/json; charset=utf-8 1505.1416ms
+2026-04-06 09:54:45.739 +02:00 [INF] Executed DbCommand (41ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:54:45.840 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:54:45.842 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:54:45.927 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 09:54:46.112 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 09:54:46.113 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 09:54:46.279 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 09:54:46.279 +02:00 [INF] Hosting environment: Development
+2026-04-06 09:54:46.280 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 09:54:46.401 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 09:54:46.547 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 151.7416ms
+2026-04-06 09:54:46.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 09:54:46.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 09:54:46.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 09:54:46.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 09:54:46.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 09:54:46.675 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 89.1614ms
+2026-04-06 09:54:46.586 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 09:54:46.640 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 09:54:46.709 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 122.9643ms
+2026-04-06 09:54:46.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 124.634ms
+2026-04-06 09:54:46.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 124.6294ms
+2026-04-06 09:54:46.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 127.885ms
+2026-04-06 09:54:46.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 124.6334ms
+2026-04-06 09:54:46.738 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.1584ms
+2026-04-06 09:54:46.794 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 09:54:46.812 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.3265ms
+2026-04-06 09:55:06.255 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7154/Api/Auth/Login - application/json 67
+2026-04-06 09:55:06.305 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.AuthController.Login (SchoolProject.Api)'
+2026-04-06 09:55:06.323 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolProject.Application.Features.Auth.Commands.Models.LoginCommand) on controller SchoolProject.Api.Controllers.AuthController (SchoolProject.Api).
+2026-04-06 09:55:06.332 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 09:55:06.374 +02:00 [INF] Login attempt for Admin4@gmail.com
+2026-04-06 09:55:06.432 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-04-06 09:55:06.527 +02:00 [INF] Login successful for Admin4@gmail.com
+2026-04-06 09:55:06.574 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-04-06 09:55:06.725 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 512), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ApplicationUserId], [CreatedAt], [ExpiresAt], [IsDeleted], [IsRevoked], [Token], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-04-06 09:55:06.826 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Auth.Responses.AuthResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 09:55:06.847 +02:00 [INF] Executed action SchoolProject.Api.Controllers.AuthController.Login (SchoolProject.Api) in 520.0197ms
+2026-04-06 09:55:06.848 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.AuthController.Login (SchoolProject.Api)'
+2026-04-06 09:55:06.853 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7154/Api/Auth/Login - 200 null application/json; charset=utf-8 597.8578ms
+2026-04-06 09:58:01.986 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Auth/TeacherRegister - application/json 359
+2026-04-06 09:58:02.026 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 09:58:02.027 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 09:58:02.028 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Auth/TeacherRegister - 405 0 null 42.3642ms
+2026-04-06 09:58:47.043 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:58:47.145 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:58:47.147 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:58:47.226 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 09:58:47.375 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 09:58:47.376 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 09:58:47.523 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 09:58:47.523 +02:00 [INF] Hosting environment: Development
+2026-04-06 09:58:47.524 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 09:58:47.962 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 09:58:48.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 161.9783ms
+2026-04-06 09:58:48.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 09:58:48.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 09:58:48.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 09:58:48.164 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 09:58:48.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 09:58:48.162 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 09:58:48.197 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 34.4535ms
+2026-04-06 09:58:48.168 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 09:58:48.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 41.8033ms
+2026-04-06 09:58:48.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 41.7964ms
+2026-04-06 09:58:48.204 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 41.8096ms
+2026-04-06 09:58:48.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 45.1537ms
+2026-04-06 09:58:48.211 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 48.8796ms
+2026-04-06 09:58:48.237 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.6443ms
+2026-04-06 09:58:48.299 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 09:58:48.319 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.2811ms
+2026-04-06 09:58:54.889 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7154/Api/Auth/TeacherRegister - application/json 359
+2026-04-06 09:58:54.993 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.AuthController.TeacherRegister (SchoolProject.Api)'
+2026-04-06 09:58:55.016 +02:00 [INF] Route matched with {action = "TeacherRegister", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] TeacherRegister(SchoolProject.Application.Features.Auth.Commands.Models.RegisterTeacherCommand) on controller SchoolProject.Api.Controllers.AuthController (SchoolProject.Api).
+2026-04-06 09:58:55.023 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 09:58:55.165 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-04-06 09:58:55.258 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-04-06 09:58:55.395 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-04-06 09:58:55.416 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-04-06 09:58:55.454 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE [a].[UserId] = @p AND [a].[RoleId] = @p1
+2026-04-06 09:58:55.459 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedRoleName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedRoleName
+2026-04-06 09:58:55.473 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedUserName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @normalizedUserName
+2026-04-06 09:58:55.513 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450), @p16='?' (Size = 450), @p2='?' (DbType = Int32), @p3='?' (Size = 4000), @p17='?' (Size = 4000), @p4='?' (Size = 256), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p2, [ConcurrencyStamp] = @p3, [Email] = @p4, [EmailConfirmed] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [NormalizedEmail] = @p8, [NormalizedUserName] = @p9, [PasswordHash] = @p10, [PhoneNumber] = @p11, [PhoneNumberConfirmed] = @p12, [SecurityStamp] = @p13, [TwoFactorEnabled] = @p14, [UserName] = @p15
+OUTPUT 1
+WHERE [Id] = @p16 AND [ConcurrencyStamp] = @p17;
+2026-04-06 09:58:55.617 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 100), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 200), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Teachers] ([Address], [ApplicationUserId], [CreatedAt], [DateOfBirth], [FullName], [Gender], [IsDeleted], [NationalId], [PhoneNumber], [Salary], [Specialization], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2026-04-06 09:58:55.642 +02:00 [INF] Executing CreatedResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Auth.Responses.RegisterResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 09:58:55.660 +02:00 [INF] Executed action SchoolProject.Api.Controllers.AuthController.TeacherRegister (SchoolProject.Api) in 639.0318ms
+2026-04-06 09:58:55.662 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.AuthController.TeacherRegister (SchoolProject.Api)'
+2026-04-06 09:58:55.668 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7154/Api/Auth/TeacherRegister - 201 null application/json; charset=utf-8 778.8518ms
+2026-04-06 09:59:57.545 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:59:57.647 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:59:57.649 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 09:59:57.729 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 09:59:57.910 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 09:59:57.910 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 09:59:57.955 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 09:59:57.956 +02:00 [INF] Hosting environment: Development
+2026-04-06 09:59:57.956 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 09:59:58.404 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 09:59:58.543 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 144.9949ms
+2026-04-06 09:59:58.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 09:59:58.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 09:59:58.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 09:59:58.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 09:59:58.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 09:59:58.613 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 09:59:58.642 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 09:59:58.652 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 66.0223ms
+2026-04-06 09:59:58.691 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 108.8131ms
+2026-04-06 09:59:58.691 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 108.8127ms
+2026-04-06 09:59:58.691 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 108.5253ms
+2026-04-06 09:59:58.694 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 111.0905ms
+2026-04-06 09:59:58.692 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 109.6016ms
+2026-04-06 09:59:58.719 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.0742ms
+2026-04-06 09:59:58.781 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 09:59:58.803 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.9221ms
+2026-04-06 10:00:09.157 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7154/Api/Auth/Login - application/json 71
+2026-04-06 10:00:09.201 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.AuthController.Login (SchoolProject.Api)'
+2026-04-06 10:00:09.220 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SchoolProject.Application.Features.Auth.Commands.Models.LoginCommand) on controller SchoolProject.Api.Controllers.AuthController (SchoolProject.Api).
+2026-04-06 10:00:09.229 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:00:09.269 +02:00 [INF] Login attempt for Teacher1@gmail.com
+2026-04-06 10:00:09.338 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@normalizedEmail='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @normalizedEmail
+2026-04-06 10:00:09.427 +02:00 [INF] Login successful for Teacher1@gmail.com
+2026-04-06 10:00:09.468 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@userId='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @userId
+2026-04-06 10:00:09.625 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 512), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([ApplicationUserId], [CreatedAt], [ExpiresAt], [IsDeleted], [IsRevoked], [Token], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-04-06 10:00:09.677 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Auth.Responses.AuthResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:00:09.698 +02:00 [INF] Executed action SchoolProject.Api.Controllers.AuthController.Login (SchoolProject.Api) in 473.5818ms
+2026-04-06 10:00:09.699 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.AuthController.Login (SchoolProject.Api)'
+2026-04-06 10:00:09.705 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7154/Api/Auth/Login - 200 null application/json; charset=utf-8 549.0001ms
+2026-04-06 10:01:48.758 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/10 - application/json 359
+2026-04-06 10:01:48.809 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:01:48.817 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:01:48.930 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:01:48.958 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:01:48.961 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:01:48.974 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 156.154ms
+2026-04-06 10:01:48.974 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:01:48.975 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/10 - 404 null application/json; charset=utf-8 217.2706ms
+2026-04-06 10:01:52.815 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/1 - application/json 359
+2026-04-06 10:01:52.821 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:01:52.821 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:01:52.826 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:01:52.853 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:01:52.854 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 31.3055ms
+2026-04-06 10:01:52.854 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:01:52.855 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/1 - 401 null application/json; charset=utf-8 40.1569ms
+2026-04-06 10:01:55.906 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/8 - application/json 359
+2026-04-06 10:01:55.916 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:01:55.916 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:01:55.921 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:01:55.931 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:01:55.936 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 18.4312ms
+2026-04-06 10:01:55.936 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:01:55.937 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/8 - 200 null application/json; charset=utf-8 31.1707ms
+2026-04-06 10:02:17.570 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/1 - application/json 359
+2026-04-06 10:02:17.571 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:02:17.572 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:02:17.573 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/1 - 405 0 null 2.8586ms
+2026-04-06 10:02:36.286 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:02:36.288 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:02:36.288 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:02:36.289 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/8 - 405 0 null 2.5938ms
+2026-04-06 10:02:51.744 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:02:51.747 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:02:51.748 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:02:51.748 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/8 - 405 0 null 4.7093ms
+2026-04-06 10:03:04.028 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:03:04.030 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:03:04.031 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:03:04.035 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:03:04.037 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:03:04.038 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 6.7591ms
+2026-04-06 10:03:04.039 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:03:04.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/8 - 200 null application/json; charset=utf-8 11.7398ms
+2026-04-06 10:03:32.101 +02:00 [INF] Executed DbCommand (40ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:03:32.203 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:03:32.205 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:03:32.288 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 10:03:32.467 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 10:03:32.467 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 10:03:32.614 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 10:03:32.614 +02:00 [INF] Hosting environment: Development
+2026-04-06 10:03:32.615 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 10:03:32.767 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 10:03:32.903 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 141.7264ms
+2026-04-06 10:03:32.946 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 10:03:32.946 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 10:03:32.946 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 10:03:32.954 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 8.1911ms
+2026-04-06 10:03:32.946 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 10:03:32.946 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 10:03:32.948 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 10:03:32.950 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 10:03:32.986 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 39.9574ms
+2026-04-06 10:03:32.986 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 39.6469ms
+2026-04-06 10:03:32.986 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 39.9573ms
+2026-04-06 10:03:32.989 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 42.948ms
+2026-04-06 10:03:32.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 44.5648ms
+2026-04-06 10:03:33.014 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.9575ms
+2026-04-06 10:03:33.082 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 10:03:33.099 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.4668ms
+2026-04-06 10:03:43.623 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/Update/5 - application/json 25
+2026-04-06 10:03:43.724 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:03:43.725 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:03:43.726 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/Update/5 - 405 0 null 103.2085ms
+2026-04-06 10:03:47.276 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/Update/8 - application/json 25
+2026-04-06 10:03:47.280 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:03:47.280 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:03:47.281 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/Update/8 - 405 0 null 5.3655ms
+2026-04-06 10:03:52.897 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/10 - application/json 25
+2026-04-06 10:03:52.910 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:03:52.929 +02:00 [INF] Route matched with {action = "UpdateTeacherData", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTeacherData(Int32, SchoolProject.Application.Features.Teachers.Commands.Models.UpdateTeacherCommand) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:03:52.935 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:03:53.071 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:03:53.163 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @p
+2026-04-06 10:03:53.174 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-06 10:03:53.189 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api) in 255.9331ms
+2026-04-06 10:03:53.190 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:03:53.195 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/10 - 404 null application/json; charset=utf-8 297.7362ms
+2026-04-06 10:03:58.546 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/1 - application/json 25
+2026-04-06 10:03:58.548 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:03:58.549 +02:00 [INF] Route matched with {action = "UpdateTeacherData", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTeacherData(Int32, SchoolProject.Application.Features.Teachers.Commands.Models.UpdateTeacherCommand) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:03:58.565 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @p
+2026-04-06 10:03:58.605 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-06 10:03:58.606 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api) in 56.3839ms
+2026-04-06 10:03:58.607 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:03:58.607 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/1 - 401 null application/json; charset=utf-8 61.9518ms
+2026-04-06 10:04:01.590 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - application/json 25
+2026-04-06 10:04:01.592 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:04:01.593 +02:00 [INF] Route matched with {action = "UpdateTeacherData", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTeacherData(Int32, SchoolProject.Application.Features.Teachers.Commands.Models.UpdateTeacherCommand) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:04:01.598 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @p
+2026-04-06 10:04:01.699 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 100), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 200), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Teachers] SET [Address] = @p0, [ApplicationUserId] = @p1, [CreatedAt] = @p2, [DateOfBirth] = @p3, [FullName] = @p4, [Gender] = @p5, [IsDeleted] = @p6, [NationalId] = @p7, [PhoneNumber] = @p8, [Salary] = @p9, [Specialization] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2026-04-06 10:04:01.710 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-06 10:04:01.711 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api) in 116.7438ms
+2026-04-06 10:04:01.711 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:04:01.712 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - 200 null application/json; charset=utf-8 122.508ms
+2026-04-06 10:04:12.276 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:04:12.279 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:04:12.286 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:04:12.299 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:04:12.310 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:04:12.331 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 43.6701ms
+2026-04-06 10:04:12.332 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:04:12.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/8 - 200 null application/json; charset=utf-8 56.1889ms
+2026-04-06 10:04:38.436 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - application/json 25
+2026-04-06 10:04:38.438 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:04:38.438 +02:00 [INF] Route matched with {action = "UpdateTeacherData", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTeacherData(Int32, SchoolProject.Application.Features.Teachers.Commands.Models.UpdateTeacherCommand) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:04:38.444 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @p
+2026-04-06 10:04:38.450 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 100), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 200), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Teachers] SET [Address] = @p0, [ApplicationUserId] = @p1, [CreatedAt] = @p2, [DateOfBirth] = @p3, [FullName] = @p4, [Gender] = @p5, [IsDeleted] = @p6, [NationalId] = @p7, [PhoneNumber] = @p8, [Salary] = @p9, [Specialization] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2026-04-06 10:04:38.452 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-06 10:04:38.453 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api) in 13.2345ms
+2026-04-06 10:04:38.453 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:04:38.454 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - 200 null application/json; charset=utf-8 18.2754ms
+2026-04-06 10:04:47.882 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - application/json 25
+2026-04-06 10:04:47.883 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:04:47.884 +02:00 [INF] Route matched with {action = "UpdateTeacherData", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTeacherData(Int32, SchoolProject.Application.Features.Teachers.Commands.Models.UpdateTeacherCommand) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:04:47.887 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @p
+2026-04-06 10:04:47.895 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@p12='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 450), @p2='?' (DbType = DateTime2), @p3='?' (DbType = DateTime2), @p4='?' (Size = 100), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p10='?' (Size = 200), @p11='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Teachers] SET [Address] = @p0, [ApplicationUserId] = @p1, [CreatedAt] = @p2, [DateOfBirth] = @p3, [FullName] = @p4, [Gender] = @p5, [IsDeleted] = @p6, [NationalId] = @p7, [PhoneNumber] = @p8, [Salary] = @p9, [Specialization] = @p10, [UpdatedAt] = @p11
+OUTPUT 1
+WHERE [Id] = @p12;
+2026-04-06 10:04:47.896 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-06 10:04:47.897 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api) in 11.9674ms
+2026-04-06 10:04:47.898 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:04:47.898 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - 200 null application/json; charset=utf-8 16.8733ms
+2026-04-06 10:04:57.427 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:04:57.429 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:04:57.430 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:04:57.433 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:04:57.436 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:04:57.436 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 5.8478ms
+2026-04-06 10:04:57.437 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:04:57.438 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/8 - 200 null application/json; charset=utf-8 10.4746ms
+2026-04-06 10:08:48.609 +02:00 [INF] Executed DbCommand (42ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:08:48.716 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:08:48.718 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:08:48.807 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 10:08:48.979 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 10:08:48.980 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 10:08:49.025 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 10:08:49.025 +02:00 [INF] Hosting environment: Development
+2026-04-06 10:08:49.026 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 10:08:49.363 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 10:08:49.506 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 148.1311ms
+2026-04-06 10:08:49.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 10:08:49.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 10:08:49.575 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 10:08:49.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 10:08:49.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 10:08:49.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 10:08:49.662 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 10:08:49.671 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 95.6686ms
+2026-04-06 10:08:49.678 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 128.973ms
+2026-04-06 10:08:49.681 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 130.8905ms
+2026-04-06 10:08:49.681 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 131.3233ms
+2026-04-06 10:08:49.681 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 131.3414ms
+2026-04-06 10:08:49.686 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 136.343ms
+2026-04-06 10:08:49.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.813ms
+2026-04-06 10:08:49.769 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 10:08:49.788 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.5303ms
+2026-04-06 10:08:53.307 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:08:53.415 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:08:53.434 +02:00 [INF] Route matched with {action = "GetSingleTeacher", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleTeacher(Int32) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:08:53.440 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:08:53.549 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:08:53.615 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @id
+2026-04-06 10:08:53.672 +02:00 [INF] Executing OkObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Teachers.Queries.Response.GetTeacherByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:08:53.703 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api) in 265.0048ms
+2026-04-06 10:08:53.704 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.GetSingleTeacher (SchoolProject.Api)'
+2026-04-06 10:08:53.709 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Teacher/8 - 200 null application/json; charset=utf-8 402.3933ms
+2026-04-06 10:08:59.940 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/8 - application/json 25
+2026-04-06 10:08:59.944 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:08:59.944 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2026-04-06 10:08:59.945 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/8 - 405 0 null 5.3729ms
+2026-04-06 10:09:06.916 +02:00 [INF] Request starting HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - application/json 25
+2026-04-06 10:09:06.922 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:09:06.930 +02:00 [INF] Route matched with {action = "UpdateTeacherData", controller = "Teacher"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateTeacherData(Int32, SchoolProject.Application.Features.Teachers.Commands.Models.UpdateTeacherCommand) on controller SchoolProject.Api.Controllers.TeacherController (SchoolProject.Api).
+2026-04-06 10:09:07.007 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Address], [t].[ApplicationUserId], [t].[CreatedAt], [t].[DateOfBirth], [t].[FullName], [t].[Gender], [t].[IsDeleted], [t].[NationalId], [t].[PhoneNumber], [t].[Salary], [t].[Specialization], [t].[UpdatedAt]
+FROM [Teachers] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @p
+2026-04-06 10:09:07.010 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-06 10:09:07.012 +02:00 [INF] Executed action SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api) in 81.046ms
+2026-04-06 10:09:07.013 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.TeacherController.UpdateTeacherData (SchoolProject.Api)'
+2026-04-06 10:09:07.014 +02:00 [INF] Request finished HTTP/2 PUT https://localhost:7154/Api/Teacher/Update/8 - 400 null application/json; charset=utf-8 98.2319ms
+2026-04-06 10:10:15.877 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Course/1 - null null
+2026-04-06 10:10:15.880 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api)'
+2026-04-06 10:10:15.899 +02:00 [INF] Route matched with {action = "GetSingleCourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleCourse(Int32) on controller SchoolProject.Api.Controllers.CourseController (SchoolProject.Api).
+2026-04-06 10:10:15.924 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Credits], [c].[GradeId], [c].[IsActive], [c].[IsDeleted], [c].[Name], [c].[TeacherId], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @id
+2026-04-06 10:10:15.939 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Courses.Queries.Response.GetCourseByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:10:15.942 +02:00 [INF] Executed action SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api) in 41.7435ms
+2026-04-06 10:10:15.943 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api)'
+2026-04-06 10:10:15.944 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Course/1 - 401 null application/json; charset=utf-8 67.1265ms
+2026-04-06 10:10:22.126 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Course/2 - null null
+2026-04-06 10:10:22.129 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api)'
+2026-04-06 10:10:22.129 +02:00 [INF] Route matched with {action = "GetSingleCourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleCourse(Int32) on controller SchoolProject.Api.Controllers.CourseController (SchoolProject.Api).
+2026-04-06 10:10:22.132 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Credits], [c].[GradeId], [c].[IsActive], [c].[IsDeleted], [c].[Name], [c].[TeacherId], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @id
+2026-04-06 10:10:22.133 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Courses.Queries.Response.GetCourseByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:10:22.134 +02:00 [INF] Executed action SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api) in 3.8085ms
+2026-04-06 10:10:22.135 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api)'
+2026-04-06 10:10:22.135 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Course/2 - 401 null application/json; charset=utf-8 9.1981ms
+2026-04-06 10:10:23.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Course/10 - null null
+2026-04-06 10:10:23.585 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api)'
+2026-04-06 10:10:23.586 +02:00 [INF] Route matched with {action = "GetSingleCourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSingleCourse(Int32) on controller SchoolProject.Api.Controllers.CourseController (SchoolProject.Api).
+2026-04-06 10:10:23.591 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Credits], [c].[GradeId], [c].[IsActive], [c].[IsDeleted], [c].[Name], [c].[TeacherId], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @id
+2026-04-06 10:10:23.592 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Features.Courses.Queries.Response.GetCourseByIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:10:23.593 +02:00 [INF] Executed action SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api) in 6.562ms
+2026-04-06 10:10:23.594 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.CourseController.GetSingleCourse (SchoolProject.Api)'
+2026-04-06 10:10:23.594 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Course/10 - 404 null application/json; charset=utf-8 11.23ms
+2026-04-06 10:11:01.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/1 - null null
+2026-04-06 10:11:01.323 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)
+SchoolProject.Api.Controllers.EnrollmentController.GetSingleEnrollment (SchoolProject.Api)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-04-06 10:11:01.374 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/1 - 500 null application/problem+json 56.0647ms
+2026-04-06 10:11:43.615 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:11:43.717 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:11:43.719 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:11:43.797 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 10:11:43.972 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 10:11:43.972 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 10:11:44.015 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 10:11:44.015 +02:00 [INF] Hosting environment: Development
+2026-04-06 10:11:44.016 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 10:11:44.238 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 10:11:44.369 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 135.5871ms
+2026-04-06 10:11:44.410 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 10:11:44.412 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 10:11:44.410 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 10:11:44.410 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 10:11:44.421 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 10.0241ms
+2026-04-06 10:11:44.410 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 10:11:44.410 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 10:11:44.412 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 10:11:44.431 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 21.1196ms
+2026-04-06 10:11:44.434 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 23.9988ms
+2026-04-06 10:11:44.434 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 23.9938ms
+2026-04-06 10:11:44.434 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 24.3191ms
+2026-04-06 10:11:44.443 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 32.7122ms
+2026-04-06 10:11:44.470 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.1276ms
+2026-04-06 10:11:44.533 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 10:11:44.551 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.2516ms
+2026-04-06 10:11:52.036 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/List/1 - null null
+2026-04-06 10:11:52.145 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:11:52.167 +02:00 [INF] Route matched with {action = "GetAllEnrollmentsByCourse", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEnrollmentsByCourse(Int32, Int32, Int32) on controller SchoolProject.Api.Controllers.EnrollmentController (SchoolProject.Api).
+2026-04-06 10:11:52.173 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:11:52.279 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:11:52.288 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Bases.PaginatedResponse`1[[SchoolProject.Application.Features.Enrollments.Queries.Response.GetEnrollmentsByCourseIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:11:52.308 +02:00 [INF] Executed action SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api) in 137.9709ms
+2026-04-06 10:11:52.309 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:11:52.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/List/1 - 400 null application/json; charset=utf-8 275.0736ms
+2026-04-06 10:12:01.185 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/List/2 - null null
+2026-04-06 10:12:01.189 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:01.189 +02:00 [INF] Route matched with {action = "GetAllEnrollmentsByCourse", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEnrollmentsByCourse(Int32, Int32, Int32) on controller SchoolProject.Api.Controllers.EnrollmentController (SchoolProject.Api).
+2026-04-06 10:12:01.193 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Bases.PaginatedResponse`1[[SchoolProject.Application.Features.Enrollments.Queries.Response.GetEnrollmentsByCourseIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:12:01.194 +02:00 [INF] Executed action SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api) in 3.9182ms
+2026-04-06 10:12:01.195 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:01.196 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/List/2 - 400 null application/json; charset=utf-8 11.4598ms
+2026-04-06 10:12:02.458 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/List/3 - null null
+2026-04-06 10:12:02.463 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:02.463 +02:00 [INF] Route matched with {action = "GetAllEnrollmentsByCourse", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEnrollmentsByCourse(Int32, Int32, Int32) on controller SchoolProject.Api.Controllers.EnrollmentController (SchoolProject.Api).
+2026-04-06 10:12:02.468 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Bases.PaginatedResponse`1[[SchoolProject.Application.Features.Enrollments.Queries.Response.GetEnrollmentsByCourseIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:12:02.469 +02:00 [INF] Executed action SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api) in 5.0059ms
+2026-04-06 10:12:02.470 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:02.471 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/List/3 - 400 null application/json; charset=utf-8 13.2085ms
+2026-04-06 10:12:03.865 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/List/10 - null null
+2026-04-06 10:12:03.867 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:03.868 +02:00 [INF] Route matched with {action = "GetAllEnrollmentsByCourse", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEnrollmentsByCourse(Int32, Int32, Int32) on controller SchoolProject.Api.Controllers.EnrollmentController (SchoolProject.Api).
+2026-04-06 10:12:03.870 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Bases.PaginatedResponse`1[[SchoolProject.Application.Features.Enrollments.Queries.Response.GetEnrollmentsByCourseIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:12:03.871 +02:00 [INF] Executed action SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api) in 1.6192ms
+2026-04-06 10:12:03.872 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:03.872 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/List/10 - 400 null application/json; charset=utf-8 7.2135ms
+2026-04-06 10:12:05.842 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/List/18 - null null
+2026-04-06 10:12:05.844 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:05.845 +02:00 [INF] Route matched with {action = "GetAllEnrollmentsByCourse", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEnrollmentsByCourse(Int32, Int32, Int32) on controller SchoolProject.Api.Controllers.EnrollmentController (SchoolProject.Api).
+2026-04-06 10:12:05.847 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Bases.PaginatedResponse`1[[SchoolProject.Application.Features.Enrollments.Queries.Response.GetEnrollmentsByCourseIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:12:05.847 +02:00 [INF] Executed action SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api) in 1.0182ms
+2026-04-06 10:12:05.848 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:12:05.849 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/List/18 - 400 null application/json; charset=utf-8 6.5778ms
+2026-04-06 10:14:32.877 +02:00 [INF] Executed DbCommand (38ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:14:32.980 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:14:32.982 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@normalizedName='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @normalizedName
+2026-04-06 10:14:33.067 +02:00 [INF] User profile is available. Using 'C:\Users\ayman\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-06 10:14:33.262 +02:00 [INF] Now listening on: https://localhost:7154
+2026-04-06 10:14:33.262 +02:00 [INF] Now listening on: http://localhost:5204
+2026-04-06 10:14:33.454 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-06 10:14:33.454 +02:00 [INF] Hosting environment: Development
+2026-04-06 10:14:33.455 +02:00 [INF] Content root path: D:\Real Projects\WebApi\SchoolManagementProject\SchoolProject.Api
+2026-04-06 10:14:33.479 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.html - null null
+2026-04-06 10:14:33.617 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.html - 304 null null 143.6545ms
+2026-04-06 10:14:33.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-06 10:14:33.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - null null
+2026-04-06 10:14:33.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.css - null null
+2026-04-06 10:14:33.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - null null
+2026-04-06 10:14:33.655 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - null null
+2026-04-06 10:14:33.659 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/index.js - null null
+2026-04-06 10:14:33.690 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/_vs/browserLink - null null
+2026-04-06 10:14:33.701 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.js - 304 null null 43.5786ms
+2026-04-06 10:14:33.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_framework/aspnetcore-browser-refresh.js - 200 14939 application/javascript; charset=utf-8 50.4075ms
+2026-04-06 10:14:33.708 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui.css - 304 null null 52.7598ms
+2026-04-06 10:14:33.708 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-standalone-preset.js - 304 null null 52.4854ms
+2026-04-06 10:14:33.708 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/index.css - 304 null null 52.7599ms
+2026-04-06 10:14:33.712 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/swagger-ui-bundle.js - 304 null null 56.8489ms
+2026-04-06 10:14:33.732 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.2826ms
+2026-04-06 10:14:33.791 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - null null
+2026-04-06 10:14:33.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.3186ms
+2026-04-06 10:14:38.844 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7154/Api/Enrollment/List/1 - null null
+2026-04-06 10:14:38.986 +02:00 [INF] Executing endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:14:39.007 +02:00 [INF] Route matched with {action = "GetAllEnrollmentsByCourse", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllEnrollmentsByCourse(Int32, Int32, Int32) on controller SchoolProject.Api.Controllers.EnrollmentController (SchoolProject.Api).
+2026-04-06 10:14:39.014 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:14:39.151 +02:00 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-04-06 10:14:39.253 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[CreatedAt], [c].[Credits], [c].[GradeId], [c].[IsActive], [c].[IsDeleted], [c].[Name], [c].[TeacherId], [c].[UpdatedAt]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @p
+2026-04-06 10:14:39.294 +02:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'SchoolProject.Application.Bases.Response`1[[SchoolProject.Application.Bases.PaginatedResponse`1[[SchoolProject.Application.Features.Enrollments.Queries.Response.GetEnrollmentsByCourseIdResponse, SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], SchoolProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-06 10:14:39.317 +02:00 [INF] Executed action SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api) in 305.2307ms
+2026-04-06 10:14:39.318 +02:00 [INF] Executed endpoint 'SchoolProject.Api.Controllers.EnrollmentController.GetAllEnrollmentsByCourse (SchoolProject.Api)'
+2026-04-06 10:14:39.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7154/Api/Enrollment/List/1 - 401 null application/json; charset=utf-8 478.7577ms
