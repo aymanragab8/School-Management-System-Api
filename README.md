@@ -531,7 +531,7 @@ SchoolSystem
 
 ## 🗄️ Database Schema
 
-![Database Schema](./Images/Diagram.png)
+![Database Schema](./Images/diagram.png)
 
 ### Relationships Summary
 
