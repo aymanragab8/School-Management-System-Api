@@ -21,6 +21,7 @@ namespace SchoolProject.Infrastructure.Services
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IStudentRepository _studentRepository;
+        private readonly ITeacherRepository _teacherRepository;
         private readonly IGradeRepository _gradeRepository;
         private readonly IRefreshTokenRepository _refreshTokenRepository;
         private readonly ILogger<AuthService> _logger;
@@ -29,6 +30,7 @@ namespace SchoolProject.Infrastructure.Services
         public AuthService(
             UserManager<ApplicationUser> userManager,
             IStudentRepository studentRepository,
+            ITeacherRepository teacherRepository,
             IGradeRepository gradeRepository,
             IRefreshTokenRepository refreshTokenRepository,
             IOptions<JwtSettings> jwtSettings,
@@ -36,12 +38,13 @@ namespace SchoolProject.Infrastructure.Services
         {
             _userManager = userManager;
             _studentRepository = studentRepository;
+            _teacherRepository = teacherRepository;
             _gradeRepository = gradeRepository;
             _refreshTokenRepository = refreshTokenRepository;
             _logger = logger;
             _jwtSettings = jwtSettings.Value;
         }
-        public async Task<Response<RegisterResponse>> RegisterAsync(RegisterCommand request)
+        public async Task<Response<RegisterResponse>> RegisterStudentAsync(RegisterStudentCommand request)
         {
             _logger.LogInformation("Register attempt for {Email}", request.Email);
 
@@ -50,6 +53,16 @@ namespace SchoolProject.Infrastructure.Services
             {
                 _logger.LogWarning("Register failed - Email {Email} already exists", request.Email);
                 return BadRequest<RegisterResponse>("Email is already registered");
+            }
+
+            if (request.GradeId.HasValue)
+            {
+                var gradeExists = await _gradeRepository.GetByIdAsync(request.GradeId.Value);
+                if (gradeExists == null)
+                {
+                    _logger.LogWarning("Register failed - Grade {GradeId} not found", request.GradeId);
+                    return BadRequest<RegisterResponse>("Grade not found");
+                }
             }
 
             var user = new ApplicationUser
@@ -70,7 +83,7 @@ namespace SchoolProject.Infrastructure.Services
                     string.Join(", ", createResult.Errors.Select(e => e.Description)));
             }
 
-            await _userManager.AddToRoleAsync(user, "Admin");
+            await _userManager.AddToRoleAsync(user, "Student");
 
             var student = new Student
             {
@@ -84,19 +97,47 @@ namespace SchoolProject.Infrastructure.Services
                 GradeId = request.GradeId
             };
 
-            if (request.GradeId.HasValue)
-            {
-                var gradeExists = await _gradeRepository.GetByIdAsync(request.GradeId.Value);
-                if (gradeExists == null)
-                {
-                    _logger.LogWarning("Register failed - Grade {GradeId} not found", request.GradeId);
-                    return BadRequest<RegisterResponse>("Grade not found");
-                }
-            }
-
             await _studentRepository.AddAsync(student);
 
             _logger.LogInformation("Register successful for {Email} - StudentId created", request.Email);
+
+            return Registered<RegisterResponse>();
+        }
+
+        public async Task<Response<RegisterResponse>> RegisterTeacherAsync(RegisterTeacherCommand request)
+        {
+            var existingUser = await _userManager.FindByEmailAsync(request.Email);
+            if (existingUser != null)
+                return BadRequest<RegisterResponse>("Email is already registered");
+
+            var user = new ApplicationUser
+            {
+                UserName = request.Email,
+                Email = request.Email,
+                EmailConfirmed = true
+            };
+
+            var createResult = await _userManager.CreateAsync(user, request.Password);
+            if (!createResult.Succeeded)
+                return BadRequest<RegisterResponse>(
+                    string.Join(", ", createResult.Errors.Select(e => e.Description)));
+
+            await _userManager.AddToRoleAsync(user, "Teacher");
+
+            var teacher = new Teacher
+            {
+                ApplicationUserId = user.Id,
+                FullName = request.FullName,
+                NationalId = request.NationalId,
+                PhoneNumber = request.PhoneNumber,
+                Address = request.Address,
+                Gender = request.Gender,
+                DateOfBirth = request.DateOfBirth,
+                Specialization = request.Specialization,
+                Salary = request.Salary
+            };
+
+            await _teacherRepository.AddAsync(teacher);
 
             return Registered<RegisterResponse>();
         }
