@@ -54,7 +54,7 @@ namespace SchoolProject.Application.Features.Enrollments.Commands.Handlers
             var enrollment = _mapper.Map<Enrollment>(request);
             await _enrollmentRepository.AddAsync(enrollment);
 
-            return Created<string>("The enrollment has been successfully added.");
+            return Created("The enrollment has been successfully added.");
         }
 
         public async Task<Response<string>> Handle(UpdateEnrollmentCommand request, CancellationToken cancellationToken)
@@ -71,7 +71,7 @@ namespace SchoolProject.Application.Features.Enrollments.Commands.Handlers
             enrollment.UpdatedAt = DateTime.UtcNow;
             await _enrollmentRepository.UpdateAsync(enrollment);
 
-            return Updated<string>("The enrollment's data has been successfully updated.");
+            return Updated("The enrollment's data has been successfully updated.");
         }
 
         public async Task<Response<string>> Handle(DeleteEnrollmentCommand request, CancellationToken cancellationToken)
@@ -84,7 +84,7 @@ namespace SchoolProject.Application.Features.Enrollments.Commands.Handlers
             enrollment.Status = EnrollmentStatus.Dropped;
             await _enrollmentRepository.UpdateAsync(enrollment);
 
-            return Deleted<string>("The enrollment was successfully removed.");
+            return Deleted("The enrollment was successfully removed.");
         }
     }
 }

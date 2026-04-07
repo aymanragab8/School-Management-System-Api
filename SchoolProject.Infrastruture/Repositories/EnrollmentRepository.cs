@@ -27,21 +27,25 @@ namespace SchoolProject.Infrastruture.Repositories
                  .FirstOrDefaultAsync(s => s.Id == id);
         }
 
-        public async Task<List<Enrollment>> GetEnrollmentsByCourseIdAsync(int courseId)
+        public async Task<IQueryable<Enrollment>> GetEnrollmentsByCourseIdAsync(int courseId)
         {
-            return await _dbContext.Enrollments
-                .Include(e => e.Course)
-                .Include(e => e.Student)
-                .Where(e => e.CourseId == courseId)
-                .ToListAsync();
+            return await Task.FromResult(
+                _dbContext.Enrollments
+                    .Include(e => e.Course)
+                    .Include(e => e.Student)
+                    .Where(e => e.CourseId == courseId)
+                    .AsNoTracking()
+            );
         }
 
-        public async Task<List<Enrollment>> GetEnrollmentsByStudentIdAsync(int studentId)
+        public async Task<IQueryable<Enrollment>> GetEnrollmentsByStudentIdAsync(int studentId)
         {
-            return await _dbContext.Enrollments
-                .Include(e => e.Student)
-                .Where(e => e.StudentId == studentId)
-                .ToListAsync();
+            return await Task.FromResult(
+                _dbContext.Enrollments
+                    .Include(e => e.Student)
+                    .Where(e => e.StudentId == studentId)
+                    .AsNoTracking()
+            );
         }
 
         public async Task<bool> IsEnrolledAsync(int studentId, int courseId)

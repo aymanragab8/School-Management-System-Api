@@ -1,4 +1,6 @@
 ﻿
+using System.Net;
+
 namespace SchoolProject.Application.Bases
 {
     public class ResponseHandler
@@ -15,6 +17,15 @@ namespace SchoolProject.Application.Bases
                 StatusCode = System.Net.HttpStatusCode.OK,
                 Succeeded = true,
                 Message = "Deleted Successfully"
+            };
+        }
+        public Response<T> Forbidden<T>(string message = "You do not have permission to perform this action.")
+        {
+            return new Response<T>
+            {
+                StatusCode = HttpStatusCode.Forbidden,
+                Succeeded = false,
+                Message = message
             };
         }
         public Response<T> Updated<T>(T entity)

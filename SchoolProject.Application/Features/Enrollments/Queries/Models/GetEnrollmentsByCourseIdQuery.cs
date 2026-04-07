@@ -7,8 +7,8 @@ namespace SchoolProject.Application.Features.Enrollments.Queries.Models
 {
     public class GetEnrollmentsByCourseIdQuery : IRequest<Response<PaginatedResponse<GetEnrollmentsByCourseIdResponse>>>
     {
+        [JsonIgnore]
         public int CourseId { get; set; }
-
         [JsonIgnore]
         public string? currentUserId { get; set; }
         [JsonIgnore]

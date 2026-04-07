@@ -7,8 +7,8 @@ namespace SchoolProject.Domain.Interfaces
         Task<IQueryable<Enrollment>> GetAllEnrollmentsAsync();
         Task<Enrollment?> GetEnrollmentByIdAsync(int id);
         Task<bool> IsEnrolledAsync(int studentId, int courseId);
-        Task<List<Enrollment>> GetEnrollmentsByStudentIdAsync(int studentId);
-        Task<List<Enrollment>> GetEnrollmentsByCourseIdAsync(int courseId);
+        Task<IQueryable<Enrollment>> GetEnrollmentsByStudentIdAsync(int studentId);
+        Task<IQueryable<Enrollment>> GetEnrollmentsByCourseIdAsync(int courseId);
 
     }
 }

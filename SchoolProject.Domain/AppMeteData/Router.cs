@@ -6,7 +6,9 @@
         public static class Auth
         {
             public const string Prefix = "Auth/";
-            public const string Register = ConstPart + Prefix + "Register";
+            public const string StudentRegister = ConstPart + Prefix + "StudentRegister";
+            public const string TeacherRegister = ConstPart + Prefix + "TeacherRegister";
+
             public const string Login = ConstPart + Prefix + "Login";
             public const string RefreshToken = ConstPart + Prefix + "RefreshToken";
         }
@@ -16,7 +18,6 @@
             public const string GetAll = ConstPart + Prefix + "List";
             public const string GetByGrade = ConstPart + Prefix + "ByGrade/{gradeId}";
             public const string GetById = ConstPart + Prefix + "{studentId}";
-            public const string Create = ConstPart + Prefix + "Create";
             public const string Update = ConstPart + Prefix + "Update/{studentId}";
             public const string Delete = ConstPart + Prefix + "Delete/{studentId}";
         }
@@ -25,7 +26,6 @@
             public const string Prefix = "Teacher/";
             public const string GetAll = ConstPart + Prefix + "List";
             public const string GetById = ConstPart + Prefix + "{teacherId}";
-            public const string Create = ConstPart + Prefix + "Create";
             public const string Update = ConstPart + Prefix + "Update/{teacherId}";
             public const string Delete = ConstPart + Prefix + "Delete/{teacherId}";
         }
@@ -42,7 +42,7 @@
         {
             public const string Prefix = "Course/";
             public const string GetAll = ConstPart + Prefix + "List";
-            public const string GetAllByGrade = ConstPart + Prefix + "{gradeId}";
+            public const string GetAllByGrade = ConstPart + Prefix + "List/{gradeId}";
             public const string GetById = ConstPart + Prefix + "{courseId}";
             public const string Create = ConstPart + Prefix + "Create";
             public const string Update = ConstPart + Prefix + "Update/{courseId}";
@@ -52,7 +52,7 @@
         {
             public const string Prefix = "Enrollment/";
             public const string GetAll = ConstPart + Prefix + "List";
-            public const string GetAllByCourse = ConstPart + Prefix + "{courseId}";
+            public const string GetAllByCourse = ConstPart + Prefix + "List/{courseId}";
             public const string GetById = ConstPart + Prefix + "{enrollmentId}";
             public const string Create = ConstPart + Prefix + "Create";
             public const string Update = ConstPart + Prefix + "UpdateScore/{enrollmentId}";

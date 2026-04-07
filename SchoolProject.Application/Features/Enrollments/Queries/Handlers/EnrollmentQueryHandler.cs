@@ -31,11 +31,11 @@ namespace SchoolProject.Application.Features.Enrollments.Queries.Handlers
         {
             bool isAdmin = request.role == "Admin";
 
-            IEnumerable<Enrollment> enrollments;
+            IQueryable<Enrollment> enrollmentsQuery;
 
             if (isAdmin)
             {
-                enrollments = await _enrollmentRepository.GetAllEnrollmentsAsync();
+                enrollmentsQuery = await _enrollmentRepository.GetAllEnrollmentsAsync();
             }
             else
             {
@@ -43,14 +43,13 @@ namespace SchoolProject.Application.Features.Enrollments.Queries.Handlers
                 if (student == null)
                     return NotFound<PaginatedResponse<GetEnrollmentListResponse>>("Student not found.");
 
-                enrollments = await _enrollmentRepository.GetEnrollmentsByStudentIdAsync(student.Id);
+                enrollmentsQuery = await _enrollmentRepository.GetEnrollmentsByStudentIdAsync(student.Id);
             }
 
-            var mappedEnrollments = enrollments
-                .Select(s => _mapper.Map<GetEnrollmentListResponse>(s))
-                .AsQueryable();
+            var mappedQuery = enrollmentsQuery
+                .Select(s => _mapper.Map<GetEnrollmentListResponse>(s));
 
-            var paginatedList = await mappedEnrollments.ToPaginatedListAsync(request.PageNumber, request.PageSize);
+            var paginatedList = await mappedQuery.ToPaginatedListAsync(request.PageNumber, request.PageSize);
             return GetData(paginatedList);
         }
 

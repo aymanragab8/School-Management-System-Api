@@ -35,7 +35,7 @@ namespace SchoolProject.Application.Features.Teachers.Commands.Handlers
             var teacher = _mapper.Map<Teacher>(request);
             await _teacherRepository.AddAsync(teacher);
 
-            return Created<string>("The teacher has been successfully added.");
+            return Created("The teacher has been successfully added.");
         }
 
         public async Task<Response<string>> Handle(UpdateTeacherCommand request, CancellationToken cancellationToken)
@@ -53,6 +53,9 @@ namespace SchoolProject.Application.Features.Teachers.Commands.Handlers
             if (!isAdmin && !isOwner)
                 return Unauthorized<string>();
 
+            if (!isAdmin && request.Salary.HasValue)
+                return Forbidden<string>("Only admins can update the salary.");
+
             if (!string.IsNullOrEmpty(request.FullName))
                 teacher.FullName = request.FullName;
             if (!string.IsNullOrEmpty(request.Address))
@@ -60,14 +63,13 @@ namespace SchoolProject.Application.Features.Teachers.Commands.Handlers
             if (!string.IsNullOrEmpty(request.PhoneNumber))
                 teacher.PhoneNumber = request.PhoneNumber;
 
-            // Admin only
             if (isAdmin && request.Salary.HasValue)
                 teacher.Salary = request.Salary.Value;
 
             teacher.UpdatedAt = DateTime.UtcNow;
             await _teacherRepository.UpdateAsync(teacher);
 
-            return Updated<string>("The teacher's data has been successfully updated.");
+            return Updated("The teacher's data has been successfully updated.");
         }
 
         public async Task<Response<string>> Handle(DeleteTeacherCommand request, CancellationToken cancellationToken)
@@ -80,7 +82,7 @@ namespace SchoolProject.Application.Features.Teachers.Commands.Handlers
             teacher.IsDeleted = true;
             await _teacherRepository.UpdateAsync(teacher);
 
-            return Deleted<string>("The teacher was successfully removed.");
+            return Deleted("The teacher was successfully removed.");
         }
     }
 }

@@ -31,7 +31,7 @@ namespace SchoolProject.Application.Features.Grades.Commands.Handlers
             var grade = _mapper.Map<Grade>(request);
             await _gradeRepository.AddAsync(grade);
 
-            return Created<string>("The grade was added successfully.");
+            return Created("The grade was added successfully.");
         }
 
         public async Task<Response<string>> Handle(UpdateGradeCommand request, CancellationToken cancellationToken)
@@ -50,7 +50,7 @@ namespace SchoolProject.Application.Features.Grades.Commands.Handlers
             grade.UpdatedAt = DateTime.UtcNow;
             await _gradeRepository.UpdateAsync(grade);
 
-            return Updated<string>("The grade's data has been successfully updated.");
+            return Updated("The grade's data has been successfully updated.");
         }
 
         public async Task<Response<string>> Handle(DeleteGradeCommand request, CancellationToken cancellationToken)
@@ -63,7 +63,7 @@ namespace SchoolProject.Application.Features.Grades.Commands.Handlers
             grade.IsDeleted = true;
             await _gradeRepository.UpdateAsync(grade);
 
-            return Deleted<string>("The grade was successfully removed.");
+            return Deleted("The grade was successfully removed.");
         }
     }
 }
